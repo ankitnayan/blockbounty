@@ -10,17 +10,31 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link href='https://fonts.googleapis.com/css?family=Acme' rel='stylesheet'>
 
+        <style>
+            li{
+                padding: 4px;
+                font-size: 18px;
+            }
+            p{
+                font-size: 18px;
+            }
+            a{
+                font-size: 18px;
+            }
+        </style>
+
+
     </head>
 
-    <body>
+    <body class="row">
 
-        <div class="container">
+        <div class="col-xs-10 col-sm-10 col-md-10 col-lg-8 offset-1 offset-lg-2" style="padding: 16px;">
 
             <div id="header"  style="padding:16px 0;">
 
                 <a href="/" style="margin-right: 16px;">Home</a>
 
-                <div style="float:right; padding: 8px;">
+                <div style="float:right;">
                     <a href="/about" style="margin-right: 16px;">About</a>
                     <a href="mailto:pranay.iitm@gmail.com">Contact Us</a>
                 </div>
@@ -31,11 +45,11 @@
 
             <h2 style="text-align: center; margin: 16px 0;">BlockBounty: Blockchain based bug bounty platform</h2>
 
-            <div id="section1" style="padding:32px 0;">
+            <div id="section1" style="margin-top: 32px;">
 
                 <p>Many a times, when bounty hunters report bugs on bounty platforms, the client comes back and says that they already know about the bug and are working on it. This is a huge problem for bounty hunters, as they don’t have a way to counter the client - and basically need to agree with the client.</p>
                 <p>How blockchain will solve the problem of clients saying that the bug is duplicate and they are already working on it??</p>
-                <p style="font-family: 'Acme'; font-size: 18px;">BlockBounty is a bug bounty platform which enables transparency between clients and bounty hunters using cryptographic proof and immutability of blockchain.</p>
+                <p style="font-family: 'Acme'; font-size: 22px;">BlockBounty is a bug bounty platform which enables transparency between clients and bounty hunters using cryptographic proof and immutability of blockchain.</p>
 
 
                 <div style="text-align:center; ">
@@ -47,8 +61,10 @@
 
             </div>
 
+            <hr style="background-color: #202020;">
 
-            <div id="section3">
+
+            <div id="section3" style="margin-top: 32px;">
                 <h4>How it works?</h4>
                 <ul>
                     <li>When a client is working on a bug, he puts the hash of the bug report on blockchain.</li>
@@ -75,7 +91,7 @@
 
                     </li>
                     <li>They vote in Yes or No.</li>
-                    <li>Each member vote in a secret manner They majority decision is considered as valid.</li>
+                    <li>Each member votes in a secret manner. The majority decision is considered as valid.</li>
                     <li>The members voting against the majority are penalised from their staked amount.</li>
 
                 </ul>
