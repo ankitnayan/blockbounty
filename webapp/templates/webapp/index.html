@@ -1,0 +1,79 @@
+<!Doctype html>
+{% load static %}
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Welcome to BlockBounty</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+    </head>
+
+    <body>
+
+        <div class="container">
+
+            <div id="headline"  style="padding:16px 0;">
+                <h2 style="text-align: left; display: inline;">Welcome to Block Bounty</h2>
+
+                <div style="float:right; padding: 8px;">
+                    <a href="/" style="margin-right: 16px;">Home</a>
+                    <a href="/team" style="margin-right: 16px;">Team</a>
+                    <a href="mailto:pranay.iitm@gmail.com">Contact Us</a>
+                </div>
+
+
+
+            </div>
+
+            <div id="section1" style="padding:32px 0;">
+
+                <p>BlockBounty is a bug bounty platform secured by the trust provided by Blockchain.</p>
+                <div style="text-align:center; ">
+                     <a href="https://docs.google.com/document/d/1IL2hOrFbjgZj9Ybfjzpd-R8INhZh6WaVoDb4X9dKlsA/edit" target="_blank" style="padding: 8px;">White Paper</a>
+                    <p style="display: inline;">|</p>
+                    <a href="https://github.com/ankitnayan/blockbounty" target="_blank" style="padding:8px; display: inline;">Github</a>
+
+                </div>
+
+            </div>
+
+            <div id="section2" style="padding: 16px 0;">
+                <h4>Problem</h4>
+                <p>
+                    Many a times, when bounty hunters report bugs on bounty platforms, the client comes back and says that they already know about the bug and are working on it. This is a huge problem for bounty hunters, as they don’t have a way to counter the client - and basically need to agree with the client.
+                </p>
+                <i>How blockchain will solve the problem of clients saying that the bug is duplicate and they are already working on it??</i>
+
+                <h4 style="margin-top: 40px;">Solution</h4>
+                <p>BlockBounty</p>
+
+            </div>
+
+            <div id="section3">
+                <h4>How it works?</h4>
+                <ul>
+                    <li>When a client is working on a bug, he puts the hash of the bug report on blockchain.</li>
+                    <li>When a bounty hunter shares a bug pointing to the same issue, the client will share the hash of the bug report on blockchain</li>
+                    <li>The actual bug report will not be shared by the client unless the bug is fixed Once the bug is fixed, the client will share the original bug report</li>
+                    <li>Once the bug is fixed, the client will share the original bug report</li>
+                    <li>The bounty hunter can create a hash of the bug report and check if it matches with the hash pointed by the client - and published earlier.</li>
+                    <li>If the hash  doesn’t match, he can dispute clients claim (and be paid the bounty automatically)</li>
+                    <li>If the hash does match, the bounty hunter can still choose to dispute - but in this case the issue will be referred to a decentralised jury. (Refer to decentralised jury design)</li>
+                    <li>The decentralised jury is a set of trusted voters who have staked some token in the network. (We assume that greater than 51% of the jury members are honest)</li>
+
+
+
+                </ul>
+            </div>
+
+
+        </div>
+
+    </body>
+
+
+</html>
